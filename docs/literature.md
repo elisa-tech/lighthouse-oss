@@ -25,8 +25,9 @@ systems for safety-critical applications </summary>
   **Abstract**
   Today many embedded applications will have to handle multitasking with real-time time constraints and the solution for handling multitasking is to use a real-time operating system for scheduling and managing the real-time tasks. There are many different open source real-time operating systems available and the use of open source software for safety-critical applications is considered highly interesting by industries such as medical, aerospace and automotive as it enables a shorter time to market and lower development costs. If one would like to use open source software in a safety-critical context one would have to provide evidence that the software being used fulfills the requirement put forth by the industry specific standard for functional safety, such as the ISO 26262 standard for the automotive industry. However, the standards for functional safety do not provide a clear method for how one would go about certifying open source software. Therefore, in this thesis we present identified important characteristics that can be used for comparing the suitability of open source based real-time operating systems for use in safety-critical applications together with a proposed outline for a methodology that can be used for certifying an open source real-time operating system. A case study has been done where we compared two open source operating systems for small microcontrollers with the previously mentioned characteristics in order to see which of the two is most suitable for use in safety-critical applications. The most suitable candidate is then assessed in order to see to what degree it can adhere with the requirements put forth in the widely used functional safety standards IEC 61508 and ISO 26262.
 
+</details>
 
-  ## Proposals from ELISA Lund Workshop 2025
+ ## Proposals from ELISA Lund Workshop 2025
 
   - https://www.linkedin.com/advice/0/what-most-common-open-source-software-quality
   - Thesis S. Tatschner: Towards a More Sustainable and Secure Software Tooling in Free/Libre Open Source Software Environments
@@ -35,7 +36,7 @@ systems for safety-critical applications </summary>
   - Aspects of Software Quality Assurance in Open Source Software Projects: Two Case Studies from Apache Project https://ieeexplore.ieee.org/document/4301084
   - Open Source software best practices and supply chain risk management on www.gov.uk
   
-  Further checking option:
+ Further checking option:
 
   - MSR (Mining software repositories), ICSE (Int. Conference on Software Engineering), ICSME, ASE (Automated Software Engineering), FSE (Fundaments of Software Engineering)
   - Julia Lawall papers
