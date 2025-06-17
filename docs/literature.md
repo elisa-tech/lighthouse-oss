@@ -36,7 +36,7 @@ systems for safety-critical applications </summary>
   - Aspects of Software Quality Assurance in Open Source Software Projects: Two Case Studies from Apache Project https://ieeexplore.ieee.org/document/4301084
   - Open Source software best practices and supply chain risk management on www.gov.uk
   
- Further checking option:
+ ### Further checking option:
 
   - MSR (Mining software repositories), ICSE (Int. Conference on Software Engineering), ICSME, ASE (Automated Software Engineering), FSE (Fundaments of Software Engineering)
   - Julia Lawall papers
