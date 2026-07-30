@@ -1,6 +1,6 @@
 # lighthouse-oss
 
-This repository contains the work of related to the "Good Quality / Best Practices in Open Source Standard" 
+This repository contains the work related to the "Good Quality / Best Practices in Open Source Standard" 
 activities in the [Lighthouse OSS Special Interest Group](https://elisa.tech/community/special-interest-groups/).
 The group evaluates and documents established open source development practices that support software quality 
 and is developing a checklist and assessment guide to make those practices and their supporting evidence 
