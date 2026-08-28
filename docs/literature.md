@@ -40,7 +40,7 @@ they will get a descriptive statement for their relevance to this work.
   - MSR (Mining software repositories), ICSE (Int. Conference on Software Engineering), ICSME, ASE (Automated Software Engineering), FSE (Fundaments of Software Engineering)
   - Julia Lawall papers
   
-## Additional sources proposed after ELISA Workshop London 2026
+## Additional sources proposed after ELISA London Workshop 2026
 
 The following sources were proposed in [issue #3](https://github.com/elisa-tech/lighthouse-oss/issues/3)
 as potential additional inputs.
@@ -58,4 +58,3 @@ as potential additional inputs.
 - [The Open Source Repository Guide: Best Practices for Sharing Your AI/ML and Data Science Projects](https://app.readytensor.ai/publications/best-practices-for-ai-project-code-repositories-0llldKKtn8Xb)
   — Ready Tensor. Provides AI/ML-oriented guidance covering documentation, repository structure,
   dependencies, licensing, code quality, and notebooks.
-  
