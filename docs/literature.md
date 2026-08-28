@@ -17,8 +17,7 @@ they will get a descriptive statement for their relevance to this work.
 
 
 <details>
-  <summary>[2] Evaluation of open source operating
-systems for safety-critical applications </summary>
+  <summary>[2] Evaluation of open source operating systems for safety-critical applications </summary>
   
   Link: [Chalmers Master Thesis](https://odr.chalmers.se/server/api/core/bitstreams/3c83d9c5-e4ea-4ecc-b43a-7035a756ce1f/content)
   
@@ -27,7 +26,7 @@ systems for safety-critical applications </summary>
 
 </details>
 
- ## Proposals from ELISA Lund Workshop 2025
+## Proposals from ELISA Lund Workshop 2025
 
   - https://www.linkedin.com/advice/0/what-most-common-open-source-software-quality
   - Thesis S. Tatschner: Towards a More Sustainable and Secure Software Tooling in Free/Libre Open Source Software Environments
@@ -36,9 +35,27 @@ systems for safety-critical applications </summary>
   - Aspects of Software Quality Assurance in Open Source Software Projects: Two Case Studies from Apache Project https://ieeexplore.ieee.org/document/4301084
   - Open Source software best practices and supply chain risk management on www.gov.uk
   
- ### Further checking option:
+### Further checking option:
 
   - MSR (Mining software repositories), ICSE (Int. Conference on Software Engineering), ICSME, ASE (Automated Software Engineering), FSE (Fundaments of Software Engineering)
   - Julia Lawall papers
   
+## Additional sources proposed after ELISA Workshop London 2026
+
+The following sources were proposed in [issue #3](https://github.com/elisa-tech/lighthouse-oss/issues/3)
+as potential additional inputs.
+
+- [Public Code Repository Best Practices](https://ospo.library.jhu.edu/learn-grow/public-code-repository-best-practices/)
+  — Johns Hopkins University OSPO. Includes guidance for research software, the FAIR principles,
+  versioning, and persistent identifiers such as DOIs and SWHIDs.
+- [Best Practices for Open Source Software Development](https://opensource.syracuse.edu/best-practices/)
+  — Syracuse University. Includes guidance on milestones, communication, and the use of AI.
+- [Recommended Practices for Hosting and Managing Open Source Projects on GitHub](https://www.linuxfoundation.org/research/hosting-os-projects-on-github)
+  — Linux Foundation Research. Covers project documentation, governance, support, DCOs, and CLAs.
+- [Best practices for repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories)
+  — GitHub. Provides platform-specific guidance on repository documentation, security,
+  collaboration, and large-file management.
+- [The Open Source Repository Guide: Best Practices for Sharing Your AI/ML and Data Science Projects](https://app.readytensor.ai/publications/best-practices-for-ai-project-code-repositories-0llldKKtn8Xb)
+  — Ready Tensor. Provides AI/ML-oriented guidance covering documentation, repository structure,
+  dependencies, licensing, code quality, and notebooks.
   
