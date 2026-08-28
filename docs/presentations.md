@@ -1,7 +1,6 @@
 # Talks and presentations
 
-This page collects public updates from the ELISA Lighthouse OSS SIG and
-presentations that communicate or apply its work.
+This page collects public updates from the SIG and presentations that communicate or apply its work.
 
 ## SIG updates
 
