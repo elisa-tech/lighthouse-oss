@@ -8,4 +8,6 @@
 
 [Example Projects](projects.md)
 
+[Talks and Presentations](presentations.md)
+
 [Further References](references.md)
