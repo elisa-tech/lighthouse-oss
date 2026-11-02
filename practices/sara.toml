@@ -1,0 +1,13 @@
+model_schema = "model.yaml"
+
+[repositories]
+paths = [
+    "./docs"
+]
+
+[validation]
+strict_mode = false
+
+[output]
+colors = true
+emojis = true
