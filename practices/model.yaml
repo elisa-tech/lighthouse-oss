@@ -1,0 +1,231 @@
+# Lighthouse OSS practice model for sara.
+#
+# Each practice area has two item types:
+#   - <area>              the category (root), e.g. GOV-000
+#   - <area>_requirement  a practice that satisfies the category, e.g. GOV-001
+#
+# Shared definitions are YAML anchors (&name) reused below via aliases (*name).
+
+item_types:
+
+# --- Governance --------------------------------------------------------------
+
+- id: governance
+  display_name: Governance
+  prefix: GOV
+  id_format: &id_format "{prefix}-{seq:03}"
+  fields: &category_fields
+  - name: assessment_question
+    display_name: Assessment Question
+    field_type: text
+
+- id: governance_requirement
+  display_name: Governance Requirement
+  prefix: GOV
+  id_format: *id_format
+  parent_types: [governance]
+  fields: &requirement_fields
+  - name: rationale
+    display_name: Rationale
+    field_type: text
+    required: true
+  - name: status
+    display_name: Status
+    field_type: !enum
+      values: [Draft, Approved, Implemented]
+    required: true
+    placeholder: Draft
+  - name: review_status
+    display_name: Review Status
+    field_type: !enum
+      values: [Not Reviewed, Reviewed, Rejected]
+    required: true
+    placeholder: Not Reviewed
+  - name: source
+    display_name: Source
+    field_type: text
+  - name: tags
+    display_name: Tags
+    field_type: !list text
+  - name: version
+    display_name: Version
+    field_type: text
+  - name: last_modified
+    display_name: Last Modified
+    field_type: date
+  allowed_targets:
+  - relation: satisfies
+    targets: [governance]
+  - relation: depends_on
+    targets: &requirement_types
+    - governance_requirement
+    - community_health_requirement
+    - development_practices_requirement
+    - security_requirement
+    - supply_chain_requirement
+    - quality_engineering_requirement
+    - documentation_requirement
+    - sustainability_requirement
+
+# --- Community Health --------------------------------------------------------
+
+- id: community_health
+  display_name: Community Health
+  prefix: COM
+  id_format: *id_format
+  fields: *category_fields
+
+- id: community_health_requirement
+  display_name: Community Health Requirement
+  prefix: COM
+  id_format: *id_format
+  parent_types: [community_health]
+  fields: *requirement_fields
+  allowed_targets:
+  - relation: satisfies
+    targets: [community_health]
+  - relation: depends_on
+    targets: *requirement_types
+
+# --- Development Practices ---------------------------------------------------
+
+- id: development_practices
+  display_name: Development Practices
+  prefix: DEV
+  id_format: *id_format
+  fields: *category_fields
+
+- id: development_practices_requirement
+  display_name: Development Practices Requirement
+  prefix: DEV
+  id_format: *id_format
+  parent_types: [development_practices]
+  fields: *requirement_fields
+  allowed_targets:
+  - relation: satisfies
+    targets: [development_practices]
+  - relation: depends_on
+    targets: *requirement_types
+
+# --- Security ----------------------------------------------------------------
+
+- id: security
+  display_name: Security
+  prefix: SEC
+  id_format: *id_format
+  fields: *category_fields
+
+- id: security_requirement
+  display_name: Security Requirement
+  prefix: SEC
+  id_format: *id_format
+  parent_types: [security]
+  fields: *requirement_fields
+  allowed_targets:
+  - relation: satisfies
+    targets: [security]
+  - relation: depends_on
+    targets: *requirement_types
+
+# --- Supply Chain ------------------------------------------------------------
+
+- id: supply_chain
+  display_name: Supply Chain
+  prefix: SC
+  id_format: *id_format
+  fields: *category_fields
+
+- id: supply_chain_requirement
+  display_name: Supply Chain Requirement
+  prefix: SC
+  id_format: *id_format
+  parent_types: [supply_chain]
+  fields: *requirement_fields
+  allowed_targets:
+  - relation: satisfies
+    targets: [supply_chain]
+  - relation: depends_on
+    targets: *requirement_types
+
+# --- Quality Engineering -----------------------------------------------------
+
+- id: quality_engineering
+  display_name: Quality Engineering
+  prefix: QE
+  id_format: *id_format
+  fields: *category_fields
+
+- id: quality_engineering_requirement
+  display_name: Quality Engineering Requirement
+  prefix: QE
+  id_format: *id_format
+  parent_types: [quality_engineering]
+  fields: *requirement_fields
+  allowed_targets:
+  - relation: satisfies
+    targets: [quality_engineering]
+  - relation: depends_on
+    targets: *requirement_types
+
+# --- Documentation -----------------------------------------------------------
+
+- id: documentation
+  display_name: Documentation
+  prefix: DOC
+  id_format: *id_format
+  fields: *category_fields
+
+- id: documentation_requirement
+  display_name: Documentation Requirement
+  prefix: DOC
+  id_format: *id_format
+  parent_types: [documentation]
+  fields: *requirement_fields
+  allowed_targets:
+  - relation: satisfies
+    targets: [documentation]
+  - relation: depends_on
+    targets: *requirement_types
+
+# --- Sustainability ----------------------------------------------------------
+
+- id: sustainability
+  display_name: Sustainability
+  prefix: SUS
+  id_format: *id_format
+  fields: *category_fields
+
+- id: sustainability_requirement
+  display_name: Sustainability Requirement
+  prefix: SUS
+  id_format: *id_format
+  parent_types: [sustainability]
+  fields: *requirement_fields
+  allowed_targets:
+  - relation: satisfies
+    targets: [sustainability]
+  - relation: depends_on
+    targets: *requirement_types
+
+relations:
+
+- id: satisfies
+  display_name: Satisfies
+  inverse: is_satisfied_by
+  direction: upstream
+  primary: true
+- id: is_satisfied_by
+  display_name: Is satisfied by
+  inverse: satisfies
+  direction: downstream
+  primary: false
+- id: depends_on
+  display_name: Depends on
+  inverse: is_required_by
+  direction: peer
+  primary: true
+- id: is_required_by
+  display_name: Is required by
+  inverse: depends_on
+  direction: peer
+  primary: false

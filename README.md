@@ -6,7 +6,15 @@ The group evaluates and documents established open source development practices 
 and is developing a checklist and assessment guide to make those practices and their supporting evidence
 easier to understand.
 
-See [Motivation, objectives, and scope](docs/motivation.md) for more details.
+See:
+
+- [Motivation, objectives, and scope](docs/motivation.md) for more details.
+- Related [Literature](docs/literature.md) 
+- Related [Standards](docs/standards.md) 
+- Relevant [Talks](docs/presentations.md) 
+- Further [References](docs/references.md)
+- The derived [practices](practices/docs) ([sara](https://crates.io/crates/sara-cli)
+model: [`model.yaml`](practices/model.yaml))
 
 All are welcome to contribute to this repository and prepare the path for documented
 and measurable best practices in open source development, which can serve as a blueprint
