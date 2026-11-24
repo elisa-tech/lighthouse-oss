@@ -13,8 +13,9 @@ See:
 - Related [Standards](docs/standards.md) 
 - Relevant [Talks](docs/presentations.md) 
 - Further [References](docs/references.md)
-- The derived [practices](practices/docs) ([sara](https://crates.io/crates/sara-cli)
-model: [`model.yaml`](practices/model.yaml))
+- The derived [practices overview](practices/docs/index.md) and [practice files](practices/docs)
+  are managed with [sara](https://crates.io/crates/sara-cli) using
+  [`model.yaml`](practices/model.yaml).
 
 All are welcome to contribute to this repository and prepare the path for documented
 and measurable best practices in open source development, which can serve as a blueprint
